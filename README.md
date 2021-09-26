@@ -3,9 +3,6 @@
 
 ## * Full source code
 '''
-
-import SwiftUI
-
 enum RecyclerViewAxis {
     case HORIZONTAL, VERTICAL
 }
@@ -54,5 +51,4 @@ struct RecyclerView<GetViewHolder : View>: View {
         }
     }
 }
-
 '''
