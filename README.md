@@ -1,10 +1,8 @@
 # RecyclerView_SwiftUI
-
-# RecyclerView In SwiftUI
 #### ScrollView + LazyVStaack(LazzyHStak) = RecyclerView
 
 ## * Full source code
-"'''"
+'''
 
 import SwiftUI
 
@@ -57,4 +55,4 @@ struct RecyclerView<GetViewHolder : View>: View {
     }
 }
 
-"'''"
+'''
