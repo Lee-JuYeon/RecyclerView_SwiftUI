@@ -1,6 +1,19 @@
 # RecyclerView_SwiftUI
 #### ScrollView + LazyVStaack(LazzyHStak) = RecyclerView
 
+## * Hou To Use?
+```swift
+RecyclerView(
+    setAxis: .HORIZONTAL,
+    setShowBar: true,
+    setSpacing: 0,
+    setContent: {
+        ForEach(1...100, id: \.self) { count in
+            Text("Placeholder \(count)")
+        }
+    }
+)
+```
 ## * Full source code
 
 ```swift
