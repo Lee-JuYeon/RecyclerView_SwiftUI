@@ -13,6 +13,9 @@
 		011908FF2700341400EDA793 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 011908FE2700341400EDA793 /* Preview Assets.xcassets */; };
 		0119090A2700341500EDA793 /* SwiftUIRecyclerViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011909092700341500EDA793 /* SwiftUIRecyclerViewTests.swift */; };
 		011909152700341500EDA793 /* SwiftUIRecyclerViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011909142700341500EDA793 /* SwiftUIRecyclerViewUITests.swift */; };
+		011909232700344600EDA793 /* RecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011909222700344600EDA793 /* RecyclerView.swift */; };
+		011909242700344600EDA793 /* RecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011909222700344600EDA793 /* RecyclerView.swift */; };
+		011909252700344600EDA793 /* RecyclerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 011909222700344600EDA793 /* RecyclerView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,7 @@
 		011909102700341500EDA793 /* SwiftUIRecyclerViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftUIRecyclerViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		011909142700341500EDA793 /* SwiftUIRecyclerViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIRecyclerViewUITests.swift; sourceTree = "<group>"; };
 		011909162700341500EDA793 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		011909222700344600EDA793 /* RecyclerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecyclerView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +99,7 @@
 		011908F62700341400EDA793 /* SwiftUIRecyclerView */ = {
 			isa = PBXGroup;
 			children = (
+				011909262700345000EDA793 /* RecyclerView */,
 				011908F72700341400EDA793 /* SwiftUIRecyclerViewApp.swift */,
 				011908F92700341400EDA793 /* ContentView.swift */,
 				011908FB2700341400EDA793 /* Assets.xcassets */,
@@ -128,6 +133,14 @@
 				011909162700341500EDA793 /* Info.plist */,
 			);
 			path = SwiftUIRecyclerViewUITests;
+			sourceTree = "<group>";
+		};
+		011909262700345000EDA793 /* RecyclerView */ = {
+			isa = PBXGroup;
+			children = (
+				011909222700344600EDA793 /* RecyclerView.swift */,
+			);
+			path = RecyclerView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				011909232700344600EDA793 /* RecyclerView.swift in Sources */,
 				011908FA2700341400EDA793 /* ContentView.swift in Sources */,
 				011908F82700341400EDA793 /* SwiftUIRecyclerViewApp.swift in Sources */,
 			);
@@ -269,6 +283,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0119090A2700341500EDA793 /* SwiftUIRecyclerViewTests.swift in Sources */,
+				011909242700344600EDA793 /* RecyclerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				011909152700341500EDA793 /* SwiftUIRecyclerViewUITests.swift in Sources */,
+				011909252700344600EDA793 /* RecyclerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
