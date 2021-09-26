@@ -48,21 +48,29 @@ struct RecyclerView<GetViewHolder : View>: View {
     }
     
     var body: some View {
-        ScrollView(showsIndicators : getShowBar){
+        ScrollView(setScrollAxis(get: getAxis), showsIndicators : getShowBar){
             switch getAxis {
             case .VERTICAL :
-                LazyVStack(
-                    alignment: getHorizontalAlignment, spacing: getSpacing
-                ){
+                LazyVStack(alignment: getHorizontalAlignment, spacing: getSpacing){
                     getContent
                 }
             case .HORIZONTAL :
-                LazyHStack(
-                    alignment: getVerticalAlignment, spacing: getSpacing
-                ){
+                LazyHStack( alignment: getVerticalAlignment, spacing: getSpacing){
                     getContent
                 }
             }
+        }
+           
+    }
+       
+    
+    // scrollview의 스크롤 방향을 설정한다.
+    private func setScrollAxis(get : RecyclerViewAxis) -> Axis.Set {
+        switch get {
+        case .VERTICAL :
+            return Axis.Set.vertical
+        case .HORIZONTAL :
+            return Axis.Set.horizontal
         }
     }
 }
