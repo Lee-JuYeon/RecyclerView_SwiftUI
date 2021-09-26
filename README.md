@@ -3,7 +3,7 @@
 
 ## * Full source code
 
-'''
+'''swift
 
 enum RecyclerViewAxis {
     case HORIZONTAL, VERTICAL
